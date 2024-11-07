@@ -3,26 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SupremeKorea</title>
+    
+    <link rel="icon" href="/image/favicon.ico">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    
+    
 </head>
 <body>
     <div id="wrap">
+        <!-- 헤더 -->
         <header>
-            <div class="header">
-                <a href="#" title="logo">
-                    <img src="./image/supremeLogo.jpg" alt="">
-                </a>
-                <a href="">SHOES</a>
-                <a href="">CLOTHING</a>
-                <a href="">ACCESSORIES</a>
-                <a href="">FEATURES</a>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
+            <nav class="container">
+                <div class="container-logo">
+                    <a href="#" title="logo">
+                        <img src="./image/supremeLogo.jpg" alt="메인 로고">
+                    </a>
+                </div>
+                <div class="container-menu">
+                    <ul class="nav">
+                        <li><a href="" title="shoes">SHOES</a></li>
+                        <li><a href="" title="CLOTHING">CLOTHING</a>
+                            <ul class="sub-menu">
+                                <li><a href="">menu</a></li>
+                                <li><a href="">menu</a></li>
+                                <li><a href="">menu</a></li>
+                                <li><a href="">menu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" title="ACCESSORIES">ACCESSORIES</a></li>
+                        <li><a href="" title="SKATE">SKATE</a></li>
+                        <li><a href="" title="FEATURES">FEATURES</a></li>
+                        <li><a href="" title="FALL/WINTER 2024 preview">FALL/WINTER 2024 preview</a></li>
+                    </ul>
+                </div>
+                <div class="container-icon">
+                    <a href="#" title="마이페이지"><i class="fa-regular fa-user fa-xl"></i></a>
+                    <a href="#" title="장바구니"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
+                </div>
+            </nav>
         </header>
-        <section></section>
-        <footer></footer>
+        <!-- /헤더 -->
+        <!-- 메인 베너 -->
+        <section>
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><video src="/video/PIGGY (2023).mp4" autoplay loop muted width="100%"></video></div>
+                <div class="swiper-slide"><img src="/image/banner-01.jpg" alt="베너1"></div>
+                <div class="swiper-slide"><img src="/image/banner-02.jpg" alt="베너2"></div>
+                <div class="swiper-slide"><img src="/image/banner-03.webp" alt="베너3"></div>
+                <div class="swiper-slide"><img src="/image/banner-04.jpg" alt="베너4"></div>
+                <div class="swiper-slide"><img src="/image/banner-05.jpg" alt="베너5"></div>
+                <div class="swiper-slide"><img src="/image/banner-06.png" alt="베너6"></div>
+                ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+        <!-- /메인베너 -->
+        <article></article>
+        <article></article>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="/image/supremeLogo.jpg" alt="">
+                    <ul>
+                        <li>주소 : 서울 강남구 선릉로153길 37</li>
+                        <li>TEL : 02-2138-0948</li>
+                        <li>영업시간 : 11:00 ~ 20:00</li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <ul>
+                        <li><a href="">random</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">stores</a></li>
+                        <li><a href="">sizing</a></li>
+                        <li><a href="">F&#46;A&#46;Q</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><a href="">terms</a></li>
+                        <li><a href="">privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-icon">
+                    <ul>
+                        <li><i class="fa-regular fa-envelope fa-xl" style="color: #1060ea;"></i></li>
+                        <li><i class="fa-brands fa-instagram fa-xl" style="color: #005eff;"></i></li>
+                        <li><i class="fa-brands fa-youtube fa-xl" style="color: #005eff;"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-box">
+                <p>copyright 2024. yonghyeon all right reserved. 본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+            </div>
+        </footer>
     </div>
+
+    <!-- 레이어 팝업-->
+    <div class="main-popup">
+        <div class="layer-cont">
+          <div class="img-wrap">
+            <img src="/image/popup1.png" alt="팝업">
+          </div>
+          <div class="btn_wrap">
+            <!-- 오늘 하루 보지 않기 --->
+            <button class="btn-today-close"><span>하루 동안 보지 않기</span></button>
+            <!-- 그냥 닫기 --->
+            <button class="btn-close">close</button>
+          </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+
+    <!-- 어썸 아이콘 -->
+    <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
+
+    <!-- 스위퍼 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+
+        $('.mySwiper').hover(function() {
+            swiper.autoplay.stop();
+        }, function(){
+            swiper.autoplay.start();
+        });
+    </script>
+
+        <!--레이어 팝업-->
+    <script>
+        
+        var toggleMainPopup = function() {
+  
+        /* 스토리지 제어 함수 정의 */
+        var handleStorage = {
+            // 스토리지에 데이터 쓰기(이름, 만료일)
+            setStorage: function (name, exp) {
+            // 만료 시간 구하기(exp를 ms단위로 변경)
+            var date = new Date();
+            date = date.setTime(date.getTime() + exp * 24 * 60 * 60 * 1000);
+
+            // 로컬 스토리지에 저장하기
+            // (값을 따로 저장하지 않고 만료 시간을 저장)
+            localStorage.setItem(name, date)
+            },
+            // 스토리지 읽어오기
+            getStorage: function (name) {
+            var now = new Date();
+            now = now.setTime(now.getTime());
+            // 현재 시각과 스토리지에 저장된 시각을 각각 비교하여
+            // 시간이 남아 있으면 true, 아니면 false 리턴
+            return parseInt(localStorage.getItem(name)) > now
+            }
+        };
+        
+        
+        // 쿠키 읽고 화면 보이게
+        if (handleStorage.getStorage("today")) {
+            $(".main-popup").removeClass("on");
+        } else {
+            $(".main-popup").addClass("on");
+        }
+
+        // 오늘하루 보지 않기 버튼
+        $(".main-popup").on("click", ".btn-today-close", function () {
+            // 로컬 스토리지에 today라는 이름으로 1일(24시간 뒤) 동안 보이지 않게
+            handleStorage.setStorage("today", 1);
+            $(this).parents(".main-popup.on").removeClass("on");
+        });
+
+        // 일반 닫기 버튼
+        $(".main-popup").on("click", ".btn-close", function () {
+            $(this).parents(".main-popup.on").removeClass("on");
+        });
+        }
+
+        $(function() {
+            toggleMainPopup();
+        });
+    </script>
 </body>
 </html>
