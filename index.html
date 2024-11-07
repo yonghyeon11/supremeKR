@@ -267,25 +267,24 @@
 
 <script>
     var swiper = new Swiper('.best-item .swiper', {
-      slidesPerView: 5,
-      direction: getDirection(),
+      slidesPerView: 2,
+      /* direction: getDirection(), */
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      on: {
-        resize: function () {
-          swiper.changeDirection(getDirection());
+      breakpoints: {
+        
+        768: {
+          slidesPerView: 3,  //브라우저가 768보다 클 때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,  //브라우저가 1024보다 클 때
+          spaceBetween: 50,
         },
       },
     });
-
-    function getDirection() {
-      var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-      return direction;
-    }
   </script>
 </body>
 </html>
