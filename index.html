@@ -7,6 +7,7 @@
     
     <link rel="icon" href="/image/favicon.ico">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     
@@ -16,66 +17,87 @@
     <div id="wrap">
         <!-- 헤더 -->
         <header>
-            <nav class="container">
-                <div class="container-logo">
-                    <a href="#" title="logo">
+            <nav class="navbar">
+                <div class="navbar-logo">
+                    <a href="">
                         <img src="./image/supremeLogo.jpg" alt="메인 로고">
                     </a>
                 </div>
-                <div class="container-menu">
-                    <ul class="nav">
-                        <li><a href="" title="shoes">SHOES</a></li>
-                        <li><a href="" title="CLOTHING">CLOTHING</a>
-                            <ul class="sub-menu">
-                                <li><a href="">menu</a></li>
-                                <li><a href="">menu</a></li>
-                                <li><a href="">menu</a></li>
-                                <li><a href="">menu</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="" title="ACCESSORIES">ACCESSORIES</a></li>
-                        <li><a href="" title="SKATE">SKATE</a></li>
-                        <li><a href="" title="FEATURES">FEATURES</a></li>
-                        <li><a href="" title="FALL/WINTER 2024 preview">FALL/WINTER 2024 preview</a></li>
-                    </ul>
-                </div>
-                <div class="container-icon">
+                <ul class="navbar-menu">
+                    <li><a href="" title="shoes">SHOES</a></li>
+                    <li><a href="" title="CLOTHING">CLOTHING</a>
+                        <ul class="sub-menu">
+                            <li><a href="">menu</a></li>
+                            <li><a href="">menu</a></li>
+                            <li><a href="">menu</a></li>
+                            <li><a href="">menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" title="ACCESSORIES">ACCESSORIES</a></li>
+                    <li><a href="" title="SKATE">SKATE</a></li>
+                    <li><a href="" title="FEATURES">FEATURES</a></li>
+                    <li><a href="" title="FALL/WINTER 2024 preview">FALL/WINTER 2024 preview</a></li>
+                </ul>
+                <ul class="navbar-links">
                     <a href="#" title="마이페이지"><i class="fa-regular fa-user fa-xl"></i></a>
                     <a href="#" title="장바구니"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
-                </div>
+                </ul>
+        
+                <a href="#" class="navbar-toggleBtn"><i class="fas fa-bars"></i></a>
             </nav>
         </header>
         <!-- /헤더 -->
         <!-- 메인 베너 -->
         <section>
             <!-- Slider main container -->
-            <div class="swiper mySwiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><video src="/video/PIGGY (2023).mp4" autoplay loop muted width="100%"></video></div>
-                <div class="swiper-slide"><img src="/image/banner-01.jpg" alt="베너1"></div>
-                <div class="swiper-slide"><img src="/image/banner-02.jpg" alt="베너2"></div>
-                <div class="swiper-slide"><img src="/image/banner-03.webp" alt="베너3"></div>
-                <div class="swiper-slide"><img src="/image/banner-04.jpg" alt="베너4"></div>
-                <div class="swiper-slide"><img src="/image/banner-05.jpg" alt="베너5"></div>
-                <div class="swiper-slide"><img src="/image/banner-06.png" alt="베너6"></div>
-                ...
+            
+                <div class="swiper mySwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><video src="/video/video-01.mp4" autoplay loop muted width="100%"></video></div>
+                    <div class="swiper-slide"><img src="/image/banner-01.jpg" alt="베너1"></div>
+                    <div class="swiper-slide"><img src="/image/banner-02.jpg" alt="베너2"></div>
+                    <div class="swiper-slide"><img src="/image/banner-03.webp" alt="베너3"></div>
+                    <div class="swiper-slide"><img src="/image/banner-04.jpg" alt="베너4"></div>
+                    <div class="swiper-slide"><img src="/image/banner-05.jpg" alt="베너5"></div>
+                    <div class="swiper-slide"><img src="/image/banner-06.png" alt="베너6"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
             
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
         </section>
         <!-- /메인베너 -->
+        <article id="article1">
+            <div class="best-item">
+                <h2>best</h2>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="/image/banner-01.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="/image/banner-02.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="/image/banner-05.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="/image/banner-01.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="/image/banner-02.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="/image/banner-05.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="/image/banner-01.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="/image/banner-02.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="/image/banner-05.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+        </article>
         <article></article>
-        <article></article>
+        <!-- footer -->
         <footer>
             <div class="footer-container">
                 <div class="footer-logo">
@@ -100,9 +122,36 @@
                 </div>
                 <div class="footer-icon">
                     <ul>
-                        <li><i class="fa-regular fa-envelope fa-xl" style="color: #1060ea;"></i></li>
-                        <li><i class="fa-brands fa-instagram fa-xl" style="color: #005eff;"></i></li>
-                        <li><i class="fa-brands fa-youtube fa-xl" style="color: #005eff;"></i></li>
+                        <li>
+                            <a href="https://supreme.com/mailinglist" title="mail" target="_blank">
+                                <i class="fa-regular fa-envelope fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/supremenewyork" title="instagram" target="_blank">
+                                <i class="fa-brands fa-instagram fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@supreme" title="youtube" target="_blank">
+                                <i class="fa-brands fa-youtube fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/supreme" title="facebook" target="_blank">
+                                <i class="fa-brands fa-facebook fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://apps.apple.com/us/app/supreme/id664573705" title="appstore" target="_blank">
+                                <i class="fa-brands fa-app-store-ios fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/user/kws9kb428gmnbh2htt6nvq0xq" title="spotify" target="_blank">
+                                <i class="fa-brands fa-spotify fa-xl"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -110,6 +159,7 @@
                 <p>copyright 2024. yonghyeon all right reserved. 본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
             </div>
         </footer>
+        <!-- /footer -->
     </div>
 
     <!-- 레이어 팝업-->
@@ -128,6 +178,7 @@
     </div>
     
 
+    <script src="/js/nav.js"></script>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
 
@@ -213,5 +264,28 @@
             toggleMainPopup();
         });
     </script>
+
+<script>
+    var swiper = new Swiper('.best-item .swiper', {
+      slidesPerView: 5,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+  </script>
 </body>
 </html>

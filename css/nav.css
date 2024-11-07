@@ -1,0 +1,143 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 12px;
+}
+
+.navbar img{
+    width: 220px;
+    height: 60px;
+    margin-bottom: -5px;
+}
+
+.navbar-menu{
+    display: flex;
+}
+
+.navbar-menu > li{
+    list-style-type: none;
+    position: relative;
+    margin-left: 50px;
+}
+
+.navbar-menu li a{
+    text-decoration: none;
+    color: #0b00ff;
+    font-size: 1vw;
+}
+
+.navbar-menu li a::after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px #0b00ff;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out
+}
+
+.navbar-menu li a:hover:after{
+    transform: scaleX(1);
+}
+
+.sub-menu li{
+    list-style-type: none;
+}
+
+.navbar-menu ul{
+    position: absolute;
+    display: none;
+    width: 100%;
+    z-index: 2;
+    margin-top: 0.5px;
+}
+
+.navbar-menu li:hover .sub-menu{
+    display: block;
+    background-color: #ffffff;
+    border-bottom: 1px solid #0b00ff;
+}
+
+.navbar-links {
+    list-style: none;
+    padding-left: 0;
+    color: teal;
+    display: flex;
+}
+
+.navbar-links li {
+    padding: 8px 12px;
+}
+
+.navbar-toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+}
+
+.navbar-links a{
+    margin: 0 5px 0 5px;
+}
+
+.navbar-links a:first-child{
+    margin-right: 15px;
+}
+
+.navbar-links a i{
+    color: #0b00ff;
+    font-size: 1.2vw;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar-menu li {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-links {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    .navbar-toggleBtn {
+        display: block;
+    }
+
+    .navbar-menu.active,
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-menu > li{
+        margin-left: 0px;
+    }
+
+    .navbar-menu li a{
+        font-size: 10px;
+    }
+
+    .navbar-links a{
+        margin: 0 5px 0 5px;
+    }
+
+    .navbar-links a i{
+        font-size: 15px;
+    }
+
+    .navbar img{
+        width: 150px;
+        height: 40px;
+    }
+}
