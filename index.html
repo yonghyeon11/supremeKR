@@ -10,7 +10,14 @@
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-    
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Jua&family=Nanum+Brush+Script&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+
+
+
     
 </head>
 <body>
@@ -47,6 +54,7 @@
             </nav>
         </header>
         <!-- /헤더 -->
+
         <!-- 메인 베너 -->
         <section>
             <!-- Slider main container -->
@@ -74,9 +82,11 @@
             
         </section>
         <!-- /메인베너 -->
+
+         <!-- Best Item -->
         <article id="article1">
             <div class="best-item">
-                <h2>Best Item</h2>
+                <h2>SUPREME RECOMMEND</h2>
                 <div class="swiper mySwiper2">
                     <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="/image/item-5-1.jpg" class="ben-img9" alt=""></div>
@@ -94,19 +104,78 @@
                   </div>
             </div>
         </article>
+        <!-- /Best Item-->
+
+        <!-- New Item-->
+        <article id="article1">
+            <div class="best-item">
+                <h2>New Item</h2>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/image/item-5-1.jpg" class="ben-img9" alt=""></div>
+                    <div class="swiper-slide"><img src="/image/shoes-1-1.jpg" class="ben-img1" alt=""></div>
+                    <div class="swiper-slide"><img src="/image/shoes-2-1.jpg" class="ben-img2" alt=""></div>
+                    <div class="swiper-slide"><img src="/image/item-1-1.jpg" class="ben-img3" alt=""></div>
+                    <div class="swiper-slide"><img src="/image/item-2-1.jpg" class="ben-img4" alt=""></div>
+                    <div class="swiper-slide"><img src="/image/item-3-1.jpg" class="ben-img5" alt=""></div>
+                    <div class="swiper-slide"><img src="/image/item-4-1.jpg" class="ben-img6" alt=""></div>  
+                    <div class="swiper-slide"><img src="/image/item-6-1.jpg" class="ben-img7" alt=""></div>
+                    <div class="swiper-slide"><img src="/image/item-7-1.jpg" class="ben-img8" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+            </div>
+        </article>
+        <!-- /New Item-->
+
         <!-- 그리드 -->
-        <h2 class="grid-h2">MM6 collection</h2>
+        <h2 class="grid-h2">Supreme X Maison Margiela</h2>
         <article id="article2">
             <div class="gird-container">
                 <img src="/image/grid-img-01.jpg" alt="" class="image image1">
                 <img src="/image/grid-item-1-1.PNG" alt="" class="image image2">
                 <img src="/image/grid-item-2-1.PNG" alt="" class="image image3">
                 <img src="/image/grid-item-3-1.PNG" alt="" class="image image4">
-                <img src="/image/grid-item-4-1.PNG" alt="" class="image image5"> 
+                <img src="/image/grid-item-4-1.PNG" alt="" class="image image5">
             </div>
+            <button type="button">컬렉션 보기</button>
         </article>
         <!-- /그리드 -->
-        <article id="article3"></article>
+        <h2 class="grid-h2">SHOES & BAG & Accessaries</h2>
+        <article id="article2">
+            <div class="item-container">
+                <img src="/image/grid-img-01.jpg" alt="" class="image shoes1">
+                <img src="/image/grid-item-1-1.PNG" alt="" class="image bag2">
+                <img src="/image/grid-item-2-1.PNG" alt="" class="image accessaries3">
+                <button class="button1" type="button">제품 보기</button>
+                <button class="button2" type="button">제품 보기</button>
+                <button class="button3" type="button">제품 보기</button>
+            </div>
+        </article>
+        <!-- lookbook -->
+        <article id="article3">
+            <h2>LookBook</h2>
+            <div class="logos">
+                <div class="logos-slide">
+                  <img src="/image/grid-item-1-1.PNG" />
+                  <img src="/image/grid-item-1-1.PNG" />
+                  <img src="/image/grid-item-1-1.PNG" />
+                  <img src="/image/grid-item-1-1.PNG" />
+                  <img src="/image/grid-item-1-1.PNG" />
+                  <img src="/image/grid-item-1-1.PNG" />
+                  <img src="/image/grid-item-1-1.PNG" />
+                  <img src="/image/grid-item-1-1.PNG" />
+                  <img src="/image/grid-item-1-1.PNG" />
+                  <img src="/image/grid-item-1-1.PNG" />
+                  <img src="/image/grid-item-1-1.PNG" />
+                  <img src="/image/grid-item-1-1.PNG" />
+                  <img src="/image/grid-item-1-1.PNG" />
+                </div>
+              </div>
+        </article>
+        <!-- /lookbook -->
+        
         <!-- footer -->
         <footer>
             <div class="footer-container">
@@ -189,8 +258,8 @@
     
 
     <script src="/js/nav.js"></script>
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script> 
 
     <!-- 어썸 아이콘 -->
     <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
@@ -215,11 +284,11 @@
           },
         });
 
-        $('.mySwiper').hover(function() {
+/*         $('.mySwiper').hover(function() {
             swiper.autoplay.stop();
         }, function(){
             swiper.autoplay.start();
-        });
+        }); */
     </script>
 
         <!--레이어 팝업-->
@@ -284,17 +353,27 @@
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        
+        480: {
+          slidesPerView: 3,  //브라우저가 480보다 클 때
+          spaceBetween: 30,
+        },
         768: {
-          slidesPerView: 3,  //브라우저가 768보다 클 때
+          slidesPerView: 4,  //브라우저가 768보다 클 때
           spaceBetween: 40,
         },
         1024: {
-          slidesPerView: 4,  //브라우저가 1024보다 클 때
+          slidesPerView: 5,  //브라우저가 1024보다 클 때
           spaceBetween: 50,
         },
       },
     });
   </script>
+
+  <script>
+    const copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+  </script>
+
+
 </body>
 </html>

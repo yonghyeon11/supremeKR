@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, a, p, i, span, button{
+  font-family: "Nanum Gothic Coding", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2{
+    font-weight: bold;
+}
+
 body{
     background-color: #ffffff;
 }
@@ -32,8 +42,25 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
     position: relative; width: 100%; height: 100%; background-color: #ffffff; margin: 0 0 100px 0;
 }
 
+#article3{
+    position: relative; width: 100%; height: 100%; background-color: #ffffff; margin: 0 0 100px 0;
+}
+
+#article2 button{
+    border-radius: 20px;
+    border: 1px solid blue;
+    width: 120px;
+    height: 38px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
 #article3{ margin: 10% 0 10% 0;}
 
+/* 그리드 1*/
 .gird-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -96,6 +123,52 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
     font-weight: bold;
 }
 
+/* 그리드 2 */
+.item-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 0.1fr;
+    grid-auto-rows: 400px;
+    grid-gap:1rem;
+    grid-template-areas: 
+    'a b c'
+    'd e f';
+    padding: 40px;
+}
+
+.item-container .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shoes1{
+    grid-area: a;
+}
+
+.bag2{
+    grid-area: b;
+}
+
+.accessaries3{
+    grid-area: c;
+}
+
+.button1{
+    grid-area: d;
+}
+
+.button2{
+    grid-area: e;
+}
+
+.button3{
+    grid-area: f;
+}
+
+
+
+/* swiper */
 .swiper {
     width: 100%;
     height: 100%;
@@ -126,6 +199,10 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 
 .best-item h2{
     margin-left: 1%;
+}
+
+#article3 h2{
+    margin-left: 2%;
 }
 
 .best-item img{
@@ -174,7 +251,7 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 
 
 
-
+/* footer */
 .footer-container{ display: flex;     padding: 0 5% 0 5%; align-items: center; justify-content: center;}
 .footer-content{ width: 40%;}
 .footer-content ul{
@@ -250,11 +327,11 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 
 
 /* 레이어팝업 */
-button {
-    border: 0;
-    background: none;
-    cursor:pointer;
-  }
+    button {
+        border: 0;
+        background: none;
+        cursor:pointer;
+    }
   
   .main-popup {
     z-index: 5; 
@@ -262,7 +339,7 @@ button {
     left: 20%; 
     top: 100px; 
     width: 550px; 
-    border: 5px solid #0b00ff; 
+    border: 3px solid #0b00ff; 
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
     display: none;
   
@@ -390,6 +467,10 @@ button {
     #article2{
         height: 450px;
     }
+
+    .main-popup{
+        width: 250px;
+    }
 }
 
 @media (max-width:480px){
@@ -411,3 +492,27 @@ button {
     }
 }
 
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .logos-slide {
+    margin-top: 50px;
+    display: inline-block;
+    animation: 50s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 500px;
+    margin: 0 40px;
+  }
