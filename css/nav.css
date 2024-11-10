@@ -42,8 +42,10 @@
 }
 
 .sub-menu li{
+    margin-top: 10px;
     list-style-type: none;
     text-align: center;
+    width: 100px;
 }
 
 .navbar-menu ul{
@@ -58,6 +60,8 @@
     display: block;
     background-color: #ffffff;
     border-bottom: 1px solid #0b00ff;
+    left: -10%;
+    width: 100px;
 }
 
 .navbar-links {
