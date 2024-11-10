@@ -23,6 +23,7 @@
 }
 
 .navbar-menu li a{
+    font-weight: bold;
     text-decoration: none;
     color: #0b00ff;
     font-size: 1vw;

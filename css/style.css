@@ -39,16 +39,20 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 }
 
 #article2{
-    position: relative; width: 100%; height: 100%; background-color: #ffffff; margin: 0 0 100px 0;
+    position: relative; width: 100%; height: 100%; background-color: #ffffff; margin: 0 0 5% 0;
 }
 
 #article3{
-    position: relative; width: 100%; height: 100%; background-color: #ffffff; margin: 0 0 100px 0;
+    position: relative; width: 100%; height: 100%; background-color: #ffffff; margin: 0 0 5% 0;
+}
+
+#article4{
+    position: relative; width: 100%; height: 100%; background-color: #ffffff; margin: 0 0 5% 0;
 }
 
 #article2 button{
     border-radius: 20px;
-    border: 1px solid blue;
+    border: 2px solid blue;
     width: 120px;
     height: 38px;
     margin: 0 auto;
@@ -56,9 +60,33 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    font-size: 12px;
 }
 
-#article3{ margin: 10% 0 10% 0;}
+#article2 button:hover{
+    background-color: #0b00ff;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+#article3 button{
+    border-radius: 20px;
+    border: 2px solid blue;
+    width: 120px;
+    height: 38px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#article3 button:hover{
+    background-color: #0b00ff;
+    color: #ffffff;
+    transition: all 0.5s;
+}
 
 /* 그리드 1*/
 .gird-container{
@@ -201,7 +229,7 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
     margin-left: 1%;
 }
 
-#article3 h2{
+#article4 h2{
     margin-left: 2%;
 }
 
@@ -209,47 +237,6 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
     margin: 0 15px 0 15px;
     height: 100%;
 }
-
-.ben-img1:hover{
-    content: url(/image/shoes-1-2.jpg);
-}
-
-.ben-img2:hover{
-    content: url(/image/shoes-2-2.jpg);
-}
-
-
-.ben-img3:hover{
-    content: url(/image/item-1-2.jpg);
-}
-
-
-.ben-img4:hover{
-    content: url(/image/item-2-2.jpg);
-}
-
-.ben-img5:hover{
-    content: url(/image/item-3-2.jpg);
-}
-
-
-.ben-img6:hover{
-    content: url(/image/item-4-2.jpg);
-}
-
-.ben-img7:hover{
-    content: url(/image/item-6-2.jpg);
-}
-
-.ben-img8:hover{
-    content: url(/image/item-7-2.jpg);
-}
-
-.ben-img9:hover{
-    content: url(/image/item-5-2.jpg);
-}
-
-
 
 /* footer */
 .footer-container{ display: flex;     padding: 0 5% 0 5%; align-items: center; justify-content: center;}
@@ -261,6 +248,7 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 }
 
 .footer-content a{
+    font-weight: bold;
     text-decoration-line: none;
 }
 
@@ -407,6 +395,31 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
     }
   }
 
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .logos-slide {
+    margin-top: 50px;
+    display: inline-block;
+    animation: 50s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 500px;
+    margin: 0 40px;
+  }
+
 
 @media (max-width:1024px){
     .footer-content li{
@@ -416,6 +429,34 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 
     .footer-content ul{
         flex-wrap: wrap;
+    }
+
+    .logos-slide img{
+        height: 350px;
+    }
+
+    section{
+        height: 700px;
+    }
+
+    .footer-logo li{
+        font-size: 13px;
+    }
+
+    .footer-content a{
+        font-size: 14px;
+    }
+
+    .footer-icon li i{
+        font-size: 25px;
+    }
+
+    .footer-box p{
+        font-size: 7px;
+    }
+
+    .best-item img{
+        width: 90%;
     }
 
     
@@ -460,16 +501,26 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
     }
 
     #article1{
-        height: 500px;
-        margin: 50px 0 100px 0;
+        height: 400px;
+        margin: 10px 0 10px 0;
     }
 
     #article2{
         height: 450px;
+        margin: 10px 0 50px 0;
+    }
+
+    #article3{
+        height: 400px;
+        margin: 10px 0 10px 0;
     }
 
     .main-popup{
         width: 250px;
+    }
+
+    .logos-slide img{
+        margin: 0 10px;
     }
 }
 
@@ -484,35 +535,55 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
     }
 
     .best-item img{
-        height: 250px;
+        height: 200px;
+        width: 90%;
     }
 
     #article2{
-        height: 300px;
+        height: 900px;
+    }
+
+    #article3{
+        height: 1500px;
+    }
+
+    .logos-slide img{
+        height: 200px;
+        margin: 0 10px;
+    }
+
+    .gird-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        'a a'
+        'a a'
+        'b c'
+        'd e';
+    }
+
+    #article2 button{
+        width: 85%;
+    }
+
+    .item-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+        grid-template-areas:
+        'a'
+        'd'
+        'b'
+        'e'
+        'c'
+        'f';
+    }
+
+    #article3 button{
+        width: 95%;
+    }
+
+    .grid-h2{
+        margin-top: 50px;
     }
 }
 
-@keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .logos {
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  
-  .logos-slide {
-    margin-top: 50px;
-    display: inline-block;
-    animation: 50s slide infinite linear;
-  }
-  
-  .logos-slide img {
-    height: 500px;
-    margin: 0 40px;
-  }
