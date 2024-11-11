@@ -6,6 +6,10 @@
     padding: 8px 12px;
 }
 
+.navbar-logo{
+    margin-left: 2%;
+}
+
 .navbar img{
     width: 220px;
     height: 60px;
@@ -95,6 +99,13 @@
     font-size: 1.2vw;
 }
 
+@media screen and (max-width:1024px){
+    .navbar img{
+        width: 200px;
+        height: 50px;
+    }
+
+}
 
 @media screen and (max-width: 768px) {
     .navbar {
@@ -147,6 +158,14 @@
     .navbar img{
         width: 150px;
         height: 40px;
+    }
+
+    .navbar-logo{
+        margin-left: 1%;
+    }
+
+    .grid-h2{
+        margin-left: 3.5%;
     }
 }
 
