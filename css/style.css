@@ -31,8 +31,7 @@ header{
 }
 
 section{width: 100%; height: 1000px;}
-article{width: 100%; height: 800px; background-color: antiquewhite;}
-footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom: -1px;}
+footer{width: 100%; height: 215px; border-top: 1px solid #000000; margin-bottom: -1px;}
 
 #article1{
     width: 100%; height: 100%; background-color: #ffffff; margin: 100px 0 100px 0;
@@ -52,7 +51,7 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 
 #article2 button{
     border-radius: 20px;
-    border: 2px solid blue;
+    border: 2px solid #000000;
     width: 120px;
     height: 38px;
     margin: 0 auto;
@@ -64,14 +63,15 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 }
 
 #article2 button:hover{
-    background-color: #0b00ff;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #0b00ff;
+    border: 2px solid #0b00ff;
     transition: all 0.5s;
 }
 
 #article3 button{
     border-radius: 20px;
-    border: 2px solid blue;
+    border: 2px solid #000000;
     width: 120px;
     height: 38px;
     margin: 0 auto;
@@ -83,8 +83,9 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 }
 
 #article3 button:hover{
-    background-color: #0b00ff;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #0b00ff;
+    border: 2px solid #0b00ff;
     transition: all 0.5s;
 }
 
@@ -248,6 +249,7 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 }
 
 .footer-content a{
+    color: #000000;
     font-weight: bold;
     text-decoration-line: none;
 }
@@ -297,8 +299,8 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 .footer-box{
     width: 100%;
     height: 20px;
-    background: #0b00ff;
-    margin-top: 22px;
+    background: #000000;
+    margin-top: 70px;
 }
 
 .footer-box p{
@@ -310,7 +312,7 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 }
 
 .footer-icon a i{
-    color: #0b00ff;
+    color: #000000;
 }
 
 
@@ -465,6 +467,10 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
 
 @media (max-width:768px){
 
+    .footer-logo ul{
+        padding-top: 5px;
+    }
+
     section{
         height: 400px;
     }
@@ -522,6 +528,11 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
     .logos-slide img{
         margin: 0 10px;
     }
+
+    .footer-logo img{
+        width: 65%;
+        padding-left: 0px;
+    }
 }
 
 @media (max-width:480px){
@@ -531,7 +542,7 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
     }
 
     .footer-logo img{
-        padding-left: 15px;
+        padding-left: 0px;
     }
 
     .best-item img{
@@ -544,7 +555,7 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
     }
 
     #article3{
-        height: 1500px;
+        height: 1450px;
     }
 
     .logos-slide img{
@@ -585,15 +596,57 @@ footer{width: 100%; height: 215px; border-top: 1px solid #0b00ff; margin-bottom:
     .grid-h2{
         margin-top: 50px;
     }
+
+    .footer-logo li{
+        font-size: 8px;
+    }
+
+    .footer-content a{
+        font-size: 10px;
+    }
 }
 
-@media (max-width:400px){
+
+
+@media (max-width:380px){
     #article3{
-        height: 1250px;
+        height: 1150px;
     }
 
     #article2{
-        height: 800px;
+        height: 700px;
+    }
+
+    .footer-logo li{
+        font-size: 6px;
+    }
+
+    .footer-content a{
+        font-size: 9px;
+    }
+
+    .footer-icon li{
+        margin-right: 1px;
+    }
+
+    .footer-icon li i{
+        font-size: 15px;
+    }
+
+    .footer-icon ul{
+        margin-left: 10px;
+    }
+
+    .logos-slide img{
+        height: 170px;
+    }
+
+    .logos-slide{
+        margin-top: 30px;
+    }
+
+    .footer-logo ul{
+        padding-top: 2px;
     }
 }
 
