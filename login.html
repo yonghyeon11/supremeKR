@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Jua&family=Nanum+Brush+Script&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    footer{
+        position: absolute; bottom: 0px; margin-top: 100px;
+    }
+
+    @media(max-width:1220px){
+        footer{
+            position: relative;
+        }
+    }
+</style>
+<body>
+    <div id="wrap">
+        <header>
+            <nav class="navbar">
+                <div class="navbar-logo">
+                    <a href="index.html">
+                        <img src="./image/supremeLogo.jpg" alt="메인 로고">
+                    </a>
+                </div>
+                <ul class="navbar-menu">
+                    <li><a href="" title="shoes">SHOES</a></li>
+                    <li><a href="" title="CLOTHING">CLOTHING</a>
+                        <ul class="sub-menu">
+                            <li><a href="">JACKETS</a></li>
+                            <li><a href="">SHIRTS</a></li>
+                            <li><a href="">TOPS</a></li>
+                            <li><a href="">T-SHIRTS</a></li>
+                            <li><a href="">PANTS</a></li>
+                            <li><a href="">HATS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" title="ACCESSORIES">ACCESSORIES</a></li>
+                    <li><a href="" title="SKATE">SKATE</a></li>
+                    <!-- <li><a href="" title="FEATURES">FEATURES</a></li> -->
+                    <li><a href="" title="FALL/WINTER 2024 preview">FALL/WINTER 2024 preview</a></li>
+                </ul>
+                <ul class="navbar-links">
+                    <a href="login.html" title="마이페이지"><i class="fa-regular fa-user fa-xl"></i></a>
+                    <a href="#" title="장바구니"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
+                </ul>
+        
+                <a href="#" class="navbar-toggleBtn"><i class="fas fa-bars"></i></a>
+            </nav>
+        </header>
+        <section id="login-box">
+            <form action="">
+                <h3> Login </h3>
+                <div class="login-container">
+                    <div class="login-info">
+                        <input class="userId" type="text" placeholder="ID" value="">
+                        <input class="password" type="password" placeholder="password" value="">
+                    </div>
+                    <button class="loginBtn" onclick="javascript:login()" type="button" title="로그인">로그인</button>
+                    <div class="serch-id">
+                        <a href="#" title="아이디 찾기">ID 찾기</a>
+                        <a href="#" title="비밀번호 찾기">비밀번호 재설정</a>
+                    </div>
+                    <button class="create-account" type="button" title="회원가입">create account</button>
+                </div>
+            </form>
+        </section>
+
+                <!-- footer -->
+                <footer  >
+                    <div class="footer-container">
+                        <div class="footer-logo">
+                            <img src="/image/supremeLogo.jpg" alt="">
+                            <ul>
+                                <li>주소 : 서울 강남구 선릉로153길 37</li>
+                                <li>TEL : 02-2138-0948</li>
+                                <li>영업시간 : 11:00 ~ 20:00</li>
+                            </ul>
+                        </div>
+                        <div class="footer-content">
+                            <ul>
+                                <li><a href="">random</a></li>
+                                <li><a href="">about</a></li>
+                                <li><a href="">stores</a></li>
+                                <li><a href="">sizing</a></li>
+                                <li><a href="">F&#46;A&#46;Q</a></li>
+                                <li><a href="">contact</a></li>
+                                <li><a href="">terms</a></li>
+                                <li><a href="">privacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-icon">
+                            <ul>
+                                <li>
+                                    <a href="https://supreme.com/mailinglist" title="mail" target="_blank">
+                                        <i class="fa-regular fa-envelope fa-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/supremenewyork" title="instagram" target="_blank">
+                                        <i class="fa-brands fa-instagram fa-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@supreme" title="youtube" target="_blank">
+                                        <i class="fa-brands fa-youtube fa-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/supreme" title="facebook" target="_blank">
+                                        <i class="fa-brands fa-facebook fa-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://apps.apple.com/us/app/supreme/id664573705" title="appstore" target="_blank">
+                                        <i class="fa-brands fa-app-store-ios fa-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://open.spotify.com/user/kws9kb428gmnbh2htt6nvq0xq" title="spotify" target="_blank">
+                                        <i class="fa-brands fa-spotify fa-xl"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-box">
+                        <p>copyright 2024. yonghyeon all right reserved. 본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+                    </div>
+                </footer>
+                <!-- /footer -->
+    </div>
+
+
+    <!-- 어썸 아이콘 -->
+    <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
+
+    <!-- nav -->
+    <script src="/js/nav.js"></script>
+    <!-- login -->
+    <script src="/js/login.js"></script>
+</body>
+
+</html>
