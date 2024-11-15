@@ -291,6 +291,7 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
 
 .footer-logo li{
     margin-top: 5px;
+    font-weight: bold;
 }
 
 .footer-logo img{

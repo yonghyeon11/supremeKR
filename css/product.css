@@ -96,6 +96,7 @@ section{
 
 .get-item button:hover{
     border: 2px solid #000000;
+    transition: all 0.5s;
 }
 
 .price-box p{
@@ -132,6 +133,7 @@ section{
 
 .product-info p{
     padding: 10px;
+    font-weight: bold;
 }
 
 .price{
