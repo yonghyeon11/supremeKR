@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupremeKorea</title>
+    <link rel="icon" href="/image/favicon.ico">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Jua&family=Nanum+Brush+Script&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header>
+            <nav class="navbar">
+                <div class="navbar-logo">
+                    <a href="index.html">
+                        <img src="./image/supremeLogo.jpg" alt="메인 로고">
+                    </a>
+                </div>
+                <ul class="navbar-menu">
+                    <li><a href="" title="shoes">SHOES</a></li>
+                    <li><a href="" title="CLOTHING">CLOTHING</a>
+                        <ul class="sub-menu">
+                            <li><a href="">JACKETS</a></li>
+                            <li><a href="">SHIRTS</a></li>
+                            <li><a href="">TOPS</a></li>
+                            <li><a href="">T-SHIRTS</a></li>
+                            <li><a href="">PANTS</a></li>
+                            <li><a href="">HATS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" title="ACCESSORIES">ACCESSORIES</a></li>
+                    <li><a href="" title="SKATE">SKATE</a></li>
+                    <!-- <li><a href="" title="FEATURES">FEATURES</a></li> -->
+                    <li><a href="" title="FALL/WINTER 2024 preview">FALL/WINTER 2024 preview</a></li>
+                </ul>
+                <ul class="navbar-links">
+                    <a href="login.html" title="마이페이지"><i class="fa-regular fa-user fa-xl"></i></a>
+                    <a href="#" title="장바구니"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
+                </ul>
+        
+                <a href="#" class="navbar-toggleBtn"><i class="fas fa-bars"></i></a>
+            </nav>
+        </header>
+        <!-- /헤더 -->
+        <section >
+            <div class="product-containser">
+                <div class="product-item">
+                    <img src="/image/item-6-1.jpg" id="main-img" alt="">
+                    <ul>
+                        <li>
+                            <button style="background-image: url(/image/item-6-1.jpg);" onclick="changeImage('/image/item-6-1.jpg')"></button>
+                        </li>
+                        <li>
+                            <button style="background-image: url(/image/item-6-2.jpg);" onclick="changeImage('/image/item-6-2.jpg')"></button>
+                        </li>
+                        <li>
+                            <button style="background-image: url(/image/item-6-3.jpg);" onclick="changeImage('/image/item-6-3.jpg')"></button>
+                        </li>
+                        <li>
+                            <button style="background-image: url(/image/item-6-4.jpg);" onclick="changeImage('/image/item-6-4.jpg')"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-info">
+                    <h4>Jackets</h4>
+                    <h2>Supreme Wave Varsity Jacket Black</h2>
+                    <h4>Size</h4>
+                    <div class="size-box">
+                        <button onclick="selectSize(this, 'S')">S</button>
+                        <button onclick="selectSize(this, 'M')">M</button>
+                        <button onclick="selectSize(this, 'L')">L</button>
+                        <button onclick="selectSize(this, 'XL')">XL</button>
+                        <button onclick="selectSize(this, 'XXL')">XXL</button>
+                    </div>
+                    <h4>Price</h4>
+                    <p class="price">￦799,000</p>
+                    <div class="get-item">
+                        <button type="button" onclick="addToCart()">장바구니</button>
+                        <button type="button" onclick="buyNow()">구매하기</button>
+                    </div>
+                    <p class="product-ship">주문 처리 및 확인 절차에는 3-5영업일이 소요되며<br> 배송에 추가 7-10일이 추가 소요됩니다.</p>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="product-img-box">
+                <img src="/image/item-6-1.jpg" alt="">
+                <img src="/image/item-6-2.jpg" alt="">
+                <img src="/image/item-6-3.jpg" alt="">
+                <img src="/image/item-6-4.jpg" alt="">
+            </div>
+        </section>
+        <!-- footer -->
+        <footer >
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="/image/supremeLogo.jpg" alt="">
+                    <ul>
+                        <li>주소 : 서울 강남구 선릉로153길 37</li>
+                        <li>TEL : 02-2138-0948</li>
+                        <li>영업시간 : 11:00 ~ 20:00</li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <ul>
+                        <li><a href="">random</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">stores</a></li>
+                        <li><a href="">sizing</a></li>
+                        <li><a href="">F&#46;A&#46;Q</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><a href="">terms</a></li>
+                        <li><a href="">privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-icon">
+                    <ul>
+                        <li>
+                            <a href="https://supreme.com/mailinglist" title="mail" target="_blank">
+                                <i class="fa-regular fa-envelope fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/supremenewyork" title="instagram" target="_blank">
+                                <i class="fa-brands fa-instagram fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@supreme" title="youtube" target="_blank">
+                                <i class="fa-brands fa-youtube fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/supreme" title="facebook" target="_blank">
+                                <i class="fa-brands fa-facebook fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://apps.apple.com/us/app/supreme/id664573705" title="appstore" target="_blank">
+                                <i class="fa-brands fa-app-store-ios fa-xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/user/kws9kb428gmnbh2htt6nvq0xq" title="spotify" target="_blank">
+                                <i class="fa-brands fa-spotify fa-xl"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-box">
+                <p>copyright 2024. yonghyeon all right reserved. 본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <!-- 모달 -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p id="modal-message">사이즈를 선택해 주세요.</p>
+                <button onclick="closeModal()">확인</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- nav -->
+    <script src="/js/nav.js"></script>
+
+    <!-- 어썸 아이콘 -->
+    <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById("main-img").src = imageSrc;
+        }
+    </script>
+
+    <script>
+        // 현재 선택된 사이즈를 저장할 변수
+        let selectedSize = null;
+
+        // 선택된 버튼에 스타일 적용하고, 선택된 사이즈를 저장하는 함수
+        function selectSize(button, size) {
+            const buttons = document.querySelectorAll(".size-box button");
+            buttons.forEach(btn => {
+                btn.style.border = "1px solid black";
+                btn.style.backgroundColor = "white";
+                btn.style.color = "black";
+            });
+            
+            // 선택된 버튼에 스타일 적용
+            button.style.border = "2px solid black";
+            button.style.backgroundColor = "black";
+            button.style.color = "white";
+
+            // 선택된 사이즈 저장
+            selectedSize = size;
+        }
+
+        // 구매하기 버튼 클릭 시 사이즈 선택 여부 확인하는 함수
+        function buyNow() {
+            const modal = document.getElementById("modal");
+            const modalMessage = document.getElementById("modal-message");
+
+            if (!selectedSize) {
+                // 사이즈가 선택되지 않은 경우 모달 메시지를 업데이트하고 모달을 표시
+                modalMessage.textContent = "사이즈를 선택해 주세요.";
+                modal.style.display = "flex";
+            } else {
+                // 사이즈가 선택되었을 때의 모달 메시지를 업데이트하고 모달을 표시
+                modalMessage.textContent = selectedSize + " 사이즈가 선택되었습니다. 구매를 진행합니다.";
+                modal.style.display = "flex";
+            }
+        }
+
+        // 장바구니 버튼 클릭 시 사이즈 선택 여부 확인 후 모달 표시하는 함수
+        function addToCart() {
+            const modal = document.getElementById("modal");
+            const modalMessage = document.getElementById("modal-message");
+
+            if (!selectedSize) {
+                // 사이즈가 선택되지 않은 경우 모달 메시지를 업데이트하고 모달을 표시
+                modalMessage.textContent = "사이즈를 선택해 주세요.";
+                modal.style.display = "flex";
+            } else {
+                // 사이즈가 선택되었을 때 장바구니 메시지로 업데이트하고 모달을 표시
+                modalMessage.textContent = "상품을 장바구니에 담았습니다.";
+                modal.style.display = "flex";
+            }
+        }
+
+        // 모달 닫기 함수
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
