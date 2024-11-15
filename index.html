@@ -165,7 +165,7 @@
         <article id="article2">
             <div class="gird-container">
                 <img src="/image/grid-img-01.jpg" alt="" class="image image1">
-                <img src="/image/grid-item-1-1.PNG" alt="" class="image image2">
+                <a href="/product.html"><img src="/image/grid-item-1-1.PNG" alt="" class="image image2"></a>
                 <img src="/image/grid-item-2-1.PNG" alt="" class="image image3">
                 <img src="/image/grid-item-3-1.PNG" alt="" class="image image4">
                 <img src="/image/grid-item-4-1.PNG" alt="" class="image image5">
@@ -325,12 +325,6 @@
             prevEl: ".swiper-button-prev",
           },
         });
-
-/*         $('.mySwiper').hover(function() {
-            swiper.autoplay.stop();
-        }, function(){
-            swiper.autoplay.start();
-        }); */
     </script>
 
         <!--레이어 팝업-->
@@ -386,63 +380,63 @@
         });
     </script>
 
-<script>
-    var swiper = new Swiper('.best-item .swiper', {
-      slidesPerView: 2,
-      /* direction: getDirection(), */
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        480: {
-          slidesPerView: 3,  //브라우저가 480보다 클 때
-          spaceBetween: 30,
+    <script>
+        var swiper = new Swiper('.best-item .swiper', {
+        slidesPerView: 2,
+        /* direction: getDirection(), */
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-        768: {
-          slidesPerView: 4,  //브라우저가 768보다 클 때
-          spaceBetween: 40,
+        breakpoints: {
+            480: {
+            slidesPerView: 3,  //브라우저가 480보다 클 때
+            spaceBetween: 30,
+            },
+            768: {
+            slidesPerView: 4,  //브라우저가 768보다 클 때
+            spaceBetween: 40,
+            },
+            1024: {
+            slidesPerView: 5,  //브라우저가 1024보다 클 때
+            spaceBetween: 50,
+            },
         },
-        1024: {
-          slidesPerView: 5,  //브라우저가 1024보다 클 때
-          spaceBetween: 50,
-        },
-      },
-    });
-  </script>
-
-  <script>
-    const copy = document.querySelector(".logos-slide").cloneNode(true);
-    document.querySelector(".logos").appendChild(copy);
-  </script>
-
-  <script>
-    const bestItems = Array.from({ length: 9 }, (_, i) => document.getElementById(`bestItem${i + 1}`));
-
-    bestItems.forEach((item, index) => {
-        item.addEventListener("mouseover", () => {
-            item.setAttribute("src", `image/item-${index + 1}-2.jpg`);
         });
+    </script>
 
-        item.addEventListener("mouseleave", () => {
-            item.setAttribute("src", `image/item-${index + 1}-1.jpg`);
+    <script>
+        const copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+    </script>
+
+    <script>
+        const bestItems = Array.from({ length: 9 }, (_, i) => document.getElementById(`bestItem${i + 1}`));
+
+        bestItems.forEach((item, index) => {
+            item.addEventListener("mouseover", () => {
+                item.setAttribute("src", `image/item-${index + 1}-2.jpg`);
+            });
+
+            item.addEventListener("mouseleave", () => {
+                item.setAttribute("src", `image/item-${index + 1}-1.jpg`);
+            });
         });
-    });
-  </script>
+    </script>
 
-  <script>
-    const items = Array.from({ length: 9 }, (_, i) => document.getElementById(`newItem${i + 1}`));
+    <script>
+        const items = Array.from({ length: 9 }, (_, i) => document.getElementById(`newItem${i + 1}`));
 
-    items.forEach((item, index) => {
-        item.addEventListener("mouseover", () => {
-            item.setAttribute("src", `image/newItem-0${index + 1}-02.jpg`);
+        items.forEach((item, index) => {
+            item.addEventListener("mouseover", () => {
+                item.setAttribute("src", `image/newItem-0${index + 1}-02.jpg`);
+            });
+
+            item.addEventListener("mouseleave", () => {
+                item.setAttribute("src", `image/newItem-0${index + 1}-01.jpg`);
+            });
         });
-
-        item.addEventListener("mouseleave", () => {
-            item.setAttribute("src", `image/newItem-0${index + 1}-01.jpg`);
-        });
-    });
-</script>
+    </script>
 
 
 </body>
