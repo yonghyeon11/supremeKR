@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SupremeKorea</title>
+    <!-- 파비콘 -->
     <link rel="icon" href="/image/favicon.ico">
-    <link rel="stylesheet" href="/css/product.css">
+
+    <!-- 스타일 -->
     <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/product.css">
 
     <!-- 구글 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,8 +46,8 @@
                     <li><a href="" title="FALL/WINTER 2024 preview">FALL/WINTER 2024 preview</a></li>
                 </ul>
                 <ul class="navbar-links">
-                    <a href="login.html" title="마이페이지"><i class="fa-regular fa-user fa-xl"></i></a>
-                    <a href="#" title="장바구니"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
+                    <li><a href="login.html" title="마이페이지"><i class="fa-regular fa-user fa-xl"></i></a></li>
+                    <li><a href="#" title="장바구니"><i class="fa-solid fa-bag-shopping fa-xl"></i></a></li>
                 </ul>
         
                 <a href="#" class="navbar-toggleBtn"><i class="fas fa-bars"></i></a>
@@ -172,70 +176,7 @@
     <!-- 어썸 아이콘 -->
     <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
 
-    <script>
-        function changeImage(imageSrc) {
-            document.getElementById("main-img").src = imageSrc;
-        }
-    </script>
-
-    <script>
-        // 현재 선택된 사이즈를 저장할 변수
-        let selectedSize = null;
-
-        // 선택된 버튼에 스타일 적용하고, 선택된 사이즈를 저장하는 함수
-        function selectSize(button, size) {
-            const buttons = document.querySelectorAll(".size-box button");
-            buttons.forEach(btn => {
-                btn.style.border = "1px solid black";
-                btn.style.backgroundColor = "white";
-                btn.style.color = "black";
-            });
-            
-            // 선택된 버튼에 스타일 적용
-            button.style.border = "2px solid black";
-            button.style.backgroundColor = "black";
-            button.style.color = "white";
-
-            // 선택된 사이즈 저장
-            selectedSize = size;
-        }
-
-        // 구매하기 버튼 클릭 시 사이즈 선택 여부 확인하는 함수
-        function buyNow() {
-            const modal = document.getElementById("modal");
-            const modalMessage = document.getElementById("modal-message");
-
-            if (!selectedSize) {
-                // 사이즈가 선택되지 않은 경우 모달 메시지를 업데이트하고 모달을 표시
-                modalMessage.textContent = "사이즈를 선택해 주세요.";
-                modal.style.display = "flex";
-            } else {
-                // 사이즈가 선택되었을 때의 모달 메시지를 업데이트하고 모달을 표시
-                modalMessage.textContent = selectedSize + " 사이즈가 선택되었습니다. 구매를 진행합니다.";
-                modal.style.display = "flex";
-            }
-        }
-
-        // 장바구니 버튼 클릭 시 사이즈 선택 여부 확인 후 모달 표시하는 함수
-        function addToCart() {
-            const modal = document.getElementById("modal");
-            const modalMessage = document.getElementById("modal-message");
-
-            if (!selectedSize) {
-                // 사이즈가 선택되지 않은 경우 모달 메시지를 업데이트하고 모달을 표시
-                modalMessage.textContent = "사이즈를 선택해 주세요.";
-                modal.style.display = "flex";
-            } else {
-                // 사이즈가 선택되었을 때 장바구니 메시지로 업데이트하고 모달을 표시
-                modalMessage.textContent = "상품을 장바구니에 담았습니다.";
-                modal.style.display = "flex";
-            }
-        }
-
-        // 모달 닫기 함수
-        function closeModal() {
-            document.getElementById("modal").style.display = "none";
-        }
-    </script>
+    <!-- 상품 페이지 이벤트 -->
+    <script src="/js/ProductEvent.js"></script>
 </body>
 </html>
