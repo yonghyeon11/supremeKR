@@ -448,7 +448,7 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
   .lookbook-slide2 {
     margin-top: 50px;
     display: inline-block;
-    animation: 40s slide2 infinite linear;
+    animation: 50s slide2 infinite linear;
   }
   
   .lookbook-slide2 img {
@@ -468,6 +468,11 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
 
 .collection-box img{
     width: 100%;
+    transition-duration: 0.3s;
+}
+
+.collection-box img:hover{
+    transform: scale(1.05, 1.05); transition-duration: 0.5s;
 }
 
 .collection-box ul{
@@ -475,12 +480,14 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+    
 }
 
 .collection-box li{
     padding: 10px;
     width: 23%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .collection-item h2{
