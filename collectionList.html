@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SupremeKorea</title>
+    
     <!-- 파비콘 -->
     <link rel="icon" href="/image/favicon.ico">
-
+    
     <!-- 스타일 -->
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/reset.css">
+
+    <!-- 스위퍼 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <!-- 구글 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,56 +57,66 @@
             </nav>
         </header>
         <!-- /헤더 -->
-        <section >
-            <div class="product-containser">
-                <div class="product-item">
-                    <img src="/image/item-1-1.jpg" id="main-img" alt="">
+
+        <!-- lookbook -->
+        <section id="col-section" class="col-section">
+            <h2>Supreme X Maison Margiela <span>Collection</span></h2>
+            <div class="lookbook2">
+                <div class="lookbook-slide2">
+                    <img src="/image/lookbook-01.jpg" alt="룩북 이미지1">
+                    <img src="/image/lookbook-02.jpg" alt="룩북 이미지2">
+                    <img src="/image/lookbook-03.jpg" alt="룩북 이미지3">
+                    <img src="/image/lookbook-04.jpg" alt="룩북 이미지4">
+                    <img src="/image/lookbook-05.jpg" alt="룩북 이미지5">
+                    <img src="/image/lookbook-06.jpg" alt="룩북 이미지6">
+                    <img src="/image/lookbook-07.jpg" alt="룩북 이미지7">
+                    <img src="/image/lookbook-08.jpg" alt="룩북 이미지8">
+                    <img src="/image/lookbook-09.jpg" alt="룩북 이미지9">
+                    <img src="/image/lookbook-10.jpg" alt="룩북 이미지10">
+                    <img src="/image/lookbook-11.jpg" alt="룩북 이미지11">
+                    <img src="/image/lookbook-12.jpg" alt="룩북 이미지12">
+                    <img src="/image/lookbook-13.jpg" alt="룩북 이미지13">
+                    <img src="/image/lookbook-14.jpg" alt="룩북 이미지14">
+                    <img src="/image/lookbook-15.jpg" alt="룩북 이미지15">
+                    <img src="/image/lookbook-16.jpg" alt="룩북 이미지16">
+                    <img src="/image/lookbook-17.jpg" alt="룩북 이미지17">
+                    <img src="/image/lookbook-18.jpg" alt="룩북 이미지18">
+                    <img src="/image/lookbook-19.jpg" alt="룩북 이미지19">
+                    <img src="/image/lookbook-20.jpg" alt="룩북 이미지20">
+                </div>
+                </div>
+        </section>
+        <!-- /lookbook -->
+
+         <!-- SUPREME RECOMMEND -->
+        <article id="article5">
+            <div class="collection-item">
+                <h2>Collection <span>Item</span></h2>
+                <div class="collection-box">
                     <ul>
-                        <li>
-                            <button style="background-image: url(/image/item-1-1.jpg);" onclick="changeImage('/image/item-1-1.jpg')"></button>
-                        </li>
-                        <li>
-                            <button style="background-image: url(/image/item-1-3.jpg);" onclick="changeImage('/image/item-1-3.jpg')"></button>
-                        </li>
-                        <li>
-                            <button style="background-image: url(/image/item-1-2.jpg);" onclick="changeImage('/image/item-1-2.jpg')"></button>
-                        </li>
+                        <li><a href="/product/gridItem-01.html"><img src="/image/grid-item-1-1.png" alt=""></a></li>
+                        <li><a href="/product/gridItem-02.html"><img src="/image/grid-item-2-1.jpg" alt=""></a></li>
+                        <li><a href="/product/gridItem-03.html"><img src="/image/grid-item-3-1.png" alt=""></a></li>
+                        <li><a href="/product/gridItem-04.html"><img src="/image/grid-item-4-1.png" alt=""></a></li>
+                        <li><a href=""><img src="/image/grid-item-1-1.png" alt=""></a></li>
+                        <li><a href=""><img src="/image/grid-item-1-1.png" alt=""></a></li>
+                        <li><a href=""><img src="/image/grid-item-1-1.png" alt=""></a></li>
+                        <li><a href=""><img src="/image/grid-item-1-1.png" alt=""></a></li>
+                        <li><a href=""><img src="/image/grid-item-1-1.png" alt=""></a></li>
+                        <li><a href=""><img src="/image/grid-item-1-1.png" alt=""></a></li>
+                        <li><a href=""><img src="/image/grid-item-1-1.png" alt=""></a></li>
+                        <li><a href=""><img src="/image/grid-item-1-1.png" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="product-info">
-                    <h4>Jackets</h4>
-                    <h2>Supreme HJR Trompe L'oeil Hooded Work Jacket Blue</h2>
-                    <h4>Size</h4>
-                    <div class="size-box">
-                        <button onclick="selectSize(this, 'S')">S</button>
-                        <button onclick="selectSize(this, 'M')">M</button>
-                        <button onclick="selectSize(this, 'L')">L</button>
-                        <button onclick="selectSize(this, 'XL')">XL</button>
-                        <button onclick="selectSize(this, 'XXL')">XXL</button>
-                    </div>
-                    <h4>Price</h4>
-                    <p class="price">￦619,000</p>
-                    <div class="get-item">
-                        <button type="button" onclick="addToCart()">장바구니</button>
-                        <button type="button" onclick="buyNow()">구매하기</button>
-                    </div>
-                    <p class="product-ship">주문 처리 및 확인 절차에는 3-5영업일이 소요되며<br> 배송에 추가 7-10일이 추가 소요됩니다.</p>
-                </div>
             </div>
+        </article>
+        <!-- /Best Item-->
 
-        </section>
-        <section>
-            <div class="product-img-box">
-                <img src="/image/item-1-1.jpg" alt="">
-                <img src="/image/item-1-3.jpg" alt="">
-                <img src="/image/item-1-2.jpg" alt="">
-            </div>
-        </section>
         <!-- footer -->
-        <footer >
+        <footer>
             <div class="footer-container">
                 <div class="footer-logo">
-                    <img src="/image/supremeLogo.jpg" alt="">
+                    <img src="/image/supremeLogo.jpg" alt="footer메인 로고">
                     <ul>
                         <li>주소 : 서울 강남구 선릉로153길 37</li>
                         <li>TEL : 02-2138-0948</li>
@@ -163,24 +175,31 @@
             </div>
         </footer>
         <!-- /footer -->
-
-        <!-- 모달 -->
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <p id="modal-message">사이즈를 선택해 주세요.</p>
-                <button onclick="closeModal()">확인</button>
-            </div>
-        </div>
     </div>
-
     
-    <!-- nav -->
+    <!-- Nav -->
     <script src="/js/nav.js"></script>
+
+    <!-- 제이쿼리 -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script> 
 
     <!-- 어썸 아이콘 -->
     <script src="https://kit.fontawesome.com/31e6722a59.js" crossorigin="anonymous"></script>
 
-    <!-- 상품 페이지 이벤트 -->
+    <!-- 스위퍼 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- My Swiper -->
+    <script src="/js/MySwiper.js"></script>
+
+    <!--레이어 팝업-->
+    <script src="/js/LayerPopup.js"></script>
+
+    <!-- 오토 슬라이드 -->
+    <script src="/js/CollectionAutoslide.js"></script>
+
+    <!-- 상품 페이지 이벤트-->
     <script src="/js/ProductEvent.js"></script>
+
 </body>
 </html>

@@ -44,6 +44,10 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
     position: relative; width: 100%; background-color: #ffffff;
 }
 
+#col-section{
+    position: relative; width: 100%; background-color: #ffffff; margin-top: 80px;
+}
+
 #article2 button{
     border-radius: 5px;
     border: 2px solid #0048a6;
@@ -228,6 +232,10 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
     margin-left: 3%;
 }
 
+#col-section h2{
+    margin-left: 3%;
+}
+
 .best-item img{
     margin: 0 15px 0 15px;
     height: 100%;
@@ -406,22 +414,98 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
       transform: translateX(-100%);
     }
   }
+
+  @keyframes slide2 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
   
-  .logos {
+  .lookbook {
     overflow: hidden;
     white-space: nowrap;
   }
   
-  .logos-slide {
+  .lookbook-slide {
     margin-top: 50px;
     display: inline-block;
     animation: 50s slide infinite linear;
   }
   
-  .logos-slide img {
+  .lookbook-slide img {
     height: 500px;
     margin: 0 40px;
   }
+
+  .lookbook2 {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .lookbook-slide2 {
+    margin-top: 50px;
+    display: inline-block;
+    animation: 40s slide2 infinite linear;
+  }
+  
+  .lookbook-slide2 img {
+    height: 650px;
+    margin: 0 40px;
+  }
+
+
+
+.col-section span{
+    color: #0048a6;
+}
+
+.col-section h2{
+    font-size: 2.3vw;
+}
+
+.collection-box img{
+    width: 100%;
+}
+
+.collection-box ul{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.collection-box li{
+    padding: 10px;
+    width: 23%;
+    margin: 0 auto;
+}
+
+.collection-item h2{
+    font-size: 2.3vw;
+}
+
+#article5{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    margin: 100px 0 0 0;
+}
+
+.collection-item{
+    line-height: 100px;
+    padding: 0 20px 0 20px; 
+}
+
+.collection-item h2{
+    margin-left: 1.5%;
+}
+
+.collection-item span{
+    color: #0048a6;
+}
 
 
 @media (max-width:1024px){
@@ -460,11 +544,41 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
         width: 90%;
     }
 
+    .lookbook-slide2 img{
+        height: 550px;
+        margin: 0 10px;
+    }
+
+    .collection-box li{
+        width: 30%;
+    }
+
     
 }
 
 
 @media (max-width:768px){
+
+    #col-section{
+        margin-top: 30px;
+    }
+
+    #article5{
+        margin: 50px 0 0 0;
+    }
+
+    #col-section h2{
+        font-size: 15px;
+    }
+
+    .collection-item h2{
+        font-size: 15px;
+        margin-left: 0;
+    }
+
+    .collection-box li{
+        width: 45%;
+    }
 
     .footer-logo ul{
         padding-top: 5px;
@@ -533,9 +647,38 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
         width: 65%;
         padding-left: 0px;
     }
+
+    .lookbook-slide2 img{
+        height: 350px;
+    }
 }
 
 @media (max-width:480px){
+
+    #col-section h2{
+        font-size: 15px;
+    }
+
+    .collection-item h2{
+        font-size: 15px;
+        margin-left: 0;
+    }
+
+    .collection-box li{
+        width: 85%;
+    }
+
+    #article5{
+        margin: 0;
+    }
+
+    .lookbook-slide2 img{
+        height: 250px;
+    }
+
+    #col-section{
+        margin-top: 30px;
+    }
 
     #article1{
         height: 400px;
@@ -618,6 +761,19 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
 
 
 @media (max-width:380px){
+
+    .collection-box li{
+        width: 85%;
+    }
+
+    #col-section h2{
+        font-size: 15px;
+    }
+
+    .collection-item h2{
+        font-size: 15px;
+    }
+
     #article3{
         height: 1150px;
     }
