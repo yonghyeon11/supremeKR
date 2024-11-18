@@ -607,6 +607,10 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
     .footer-content a{
         font-size: 10px;
     }
+
+    .footer-box{
+        margin-top: 30px;
+    }
 }
 
 
@@ -621,7 +625,7 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
     }
 
     .footer-logo li{
-        font-size: 6px;
+        font-size: 5px;
     }
 
     .footer-content a{
@@ -650,6 +654,9 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
 
     .footer-logo ul{
         padding-top: 2px;
+    }
+    .footer-box{
+        margin-top: 20px;
     }
 }
 
