@@ -98,6 +98,10 @@
     font-size: 1.2vw;
 }
 
+.navbar-links a i:hover{
+    color: #0048a6;
+}
+
 @media screen and (max-width:1024px){
     .navbar img{
         width: 200px;
