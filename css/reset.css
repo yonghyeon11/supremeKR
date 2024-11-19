@@ -17,8 +17,8 @@ button, input[type=button], input[type=submit], input[type=reset] {
 
 /* 폰트 초기화 */
 body, input, textarea, select, button, table{
-    font-family: "Nanum Gothic Coding", monospace;
-    font-weight: 400;
+    font-family: "Noto Sans KR", serif;
+    font-optical-sizing: auto;
     font-style: normal;
   }
   
