@@ -219,6 +219,8 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
     width: 100%;
 }
 
+/* /swiper*/
+
 .best-item{
     line-height: 100px;
     padding: 0 20px 0 20px; 
@@ -414,15 +416,6 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
     }
   }
 
-  @keyframes slide2 {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-  
   .lookbook {
     overflow: hidden;
     white-space: nowrap;
@@ -437,6 +430,15 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
   .lookbook-slide img {
     height: 500px;
     margin: 0 40px;
+  }
+
+  @keyframes slide2 {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
   }
 
   .lookbook2 {

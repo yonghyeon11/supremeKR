@@ -41,7 +41,7 @@ var toggleMainPopup = function() {
     $(".main-popup").on("click", ".btn-close", function () {
         $(this).parents(".main-popup.on").removeClass("on");
     });
-    }
+}
 
     $(function() {
         toggleMainPopup();
