@@ -6,10 +6,6 @@
     padding: 8px 12px;
 }
 
-.navbar-logo{
-    margin-left: 2%;
-}
-
 .navbar img{
     width: 220px;
     height: 60px;
@@ -30,7 +26,7 @@
     font-weight: bold;
     text-decoration: none;
     color: #000000;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .navbar-menu li a::after{
@@ -49,7 +45,6 @@
     margin-top: 10px;
     list-style-type: none;
     text-align: center;
-    width: 100px;
 }
 
 .navbar-menu ul{
@@ -61,6 +56,7 @@
 }
 
 .navbar-menu li:hover .sub-menu{
+    border: 1px solid silver;
     display: block;
     background-color: #ffffff;
     left: -10%;
@@ -95,22 +91,26 @@
 
 .navbar-links a i{
     color: #000000;
-    font-size: 1.2vw;
+    font-size: 1rem;
 }
 
 .navbar-links a i:hover{
     color: #0048a6;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1025px){
     .navbar img{
         width: 200px;
         height: 50px;
     }
 
+    .navbar-menu li a{
+        font-size: 0.7rem;
+    }
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;

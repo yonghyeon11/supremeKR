@@ -9,7 +9,7 @@ body{
 
 #wrap{ 
     position: relative;
-    width: 100%;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -22,7 +22,9 @@ header{
 }
 
 section{width: 100%;}
-footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transform: translateY(140%);}
+footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transform: translateY(40%);}
+
+#footer2{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transform: translateY(140%);}
 
 #article1{
     width: 100%; height: 100%; background-color: #ffffff; margin: 100px 0 100px 0;
@@ -255,11 +257,10 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
 
 .footer-content a{
     color: #000000;
-    font-weight: bold;
     text-decoration-line: none;
 }
 
-.footer-icon{ width: 20%;}
+.footer-icon{ width: 13%;}
 .footer-icon ul{
     text-align: center;
     margin-left: 20px;
@@ -464,7 +465,7 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
 }
 
 .col-section h2{
-    font-size: 2.3vw;
+    font-size: 1.5rem;
 }
 
 .collection-box img{
@@ -567,6 +568,14 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
 
 @media (max-width:768px){
 
+    .footer-icon{
+        width: 20%;
+    }
+
+    .lookbook-slide img{
+        height: 400px;
+    }
+
     #col-section{
         margin-top: 30px;
     }
@@ -662,6 +671,11 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
 }
 
 @media (max-width:480px){
+
+    .lookbook-slide img{
+        height: 200px;
+        margin: 0 10px;
+    }
 
     #col-section h2{
         font-size: 15px;
