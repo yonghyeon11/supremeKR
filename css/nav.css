@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 8px 12px;
+    padding: 8px 0px;
 }
 
 .navbar img{
@@ -14,12 +14,17 @@
 
 .navbar-menu{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 15px;
 }
 
 .navbar-menu > li{
     list-style-type: none;
     position: relative;
-    margin-left: 50px;
+    text-align: center;
+    width: 20%;
 }
 
 .navbar-menu li a{
@@ -114,7 +119,7 @@
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        padding: 8px 24px;
+        padding: 8px 0px;
     }
     .navbar-menu {
         display: none;
