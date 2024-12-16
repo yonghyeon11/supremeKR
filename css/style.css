@@ -298,7 +298,7 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
 }
 
 .footer-logo li{
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 .footer-logo img{
@@ -523,6 +523,10 @@ footer{width: 100%; border-top: 1px solid #000000; margin-bottom: -1px; transfor
 .w3c-con{
     display: flex;
     justify-content: center;
+}
+
+.w3c-con li{
+    display: flex;
 }
 
 .w3c-con img{
